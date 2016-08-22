@@ -16,10 +16,8 @@ If you are using a Mac follow the instructions [here](https://docs.docker.com/in
 - Build maven for running a Storm cluster
     - ```mvn clean package```
 - Move the files in ```submitter``` folder (```Dockerfile``` and ```entrypoint.sh```) to ```target``` folder
-- Build the jar file on docker-machine for submitting topology
-    - ```docker-compose -p storm build```
 - Start the test environment
-    - ```docker-compose -p storm up```
+    - ```docker-compose -p storm up -d```
 
 Storm UI
 --------
