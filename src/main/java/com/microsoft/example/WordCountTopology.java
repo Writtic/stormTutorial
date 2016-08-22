@@ -9,6 +9,9 @@ import org.apache.storm.StormSubmitter;
 import org.apache.storm.topology.TopologyBuilder;
 import org.apache.storm.tuple.Fields;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class WordCountTopology {
 
     //Entry point for the topology
@@ -37,6 +40,19 @@ public class WordCountTopology {
 
         //If there are arguments, we are running on a cluster
         if (args != null && args.length > 0) {
+            // nimbus urls
+            List<String> nimbus_seeds = new ArrayList<String>();
+            nimbus_seeds.add("192.168.99.100");
+            nimbus_seeds.add("172.17.0.4");
+            // zookeeper urls
+            List<String> zookeeper_servers = new ArrayList<String>();
+            zookeeper_servers.add("192.168.99.100");
+            zookeeper_servers.add("172.17.0.2");
+            // Add configs for StormCluster on Docker.
+            conf.put(Config.NIMBUS_SEEDS, nimbus_seeds);
+            conf.put(Config.NIMBUS_THRIFT_PORT, 6627);
+            conf.put(Config.STORM_ZOOKEEPER_PORT, 2181);
+            conf.put(Config.STORM_ZOOKEEPER_SERVERS, zookeeper_servers);
             //parallelism hint to set the number of workers
             conf.setNumWorkers(3);
             //submit the topology

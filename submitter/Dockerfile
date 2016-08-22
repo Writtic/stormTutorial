@@ -1,11 +1,11 @@
 from enow/storm
 MAINTAINER writtic <writtic@gmail.com>
 
-ADD hellostorm-0.0.1-SNAPSHOT.jar $STORM_HOME/extlib/hellostorm-0.0.1-SNAPSHOT.jar
+ADD WordCount-1.0-SNAPSHOT.jar $STORM_HOME/extlib/WordCount-1.0-SNAPSHOT.jar
 
 WORKDIR /usr/share/storm
 
-ADD hellostorm-0.0.1-SNAPSHOT.jar topology.jar
+ADD WordCount-1.0-SNAPSHOT.jar topology.jar
 
 # add startup script
 ADD entrypoint.sh entrypoint.sh

@@ -27,15 +27,3 @@ ui:
   links:
     - nimbus:nimbus
     - zookeeper:zk
-kafka:
-  image: enow/kafka
-  ports:
-    - "9092:9092"
-  links:
-    - zookeeper:zk
-  environment:
-    KAFKA_CREATE_TOPICS: "test:3:1"
-    KAFKA_ZOOKEEPER_CONNECT: 192.168.99.100:2181
-    KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100
-  volumes:
-      - /var/run/docker.sock:/var/run/docker.sock

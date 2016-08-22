@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CMD="exec bin/storm jar ./topology.jar soeun.storm.kafka.topology.StormKafkaSimpleTopology"
+CMD="exec bin/storm jar ./topology.jar com.microsoft.example.WordCountTopology"
 
 echo "$CMD"
 eval "$CMD"
