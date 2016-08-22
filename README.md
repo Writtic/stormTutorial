@@ -1,7 +1,8 @@
 Storm Tutorial with Docker  ![travis-CI](https://travis-ci.org/Writtic/stormTutorial.svg?branch=master)
 ==========================
 
-Hello! Beginners of Apache Storm and Docker! This Repo is for you! Follow the README.md instructions and learn Apache Storm easily!
+Hello! Beginners of Apache Storm and Docker! <br/>
+This Repo is for you! Follow the README.md instructions and learn Apache Storm easily!
 
 This repository is based on https://azure.microsoft.com/ko-kr/documentation/articles/hdinsight-storm-develop-java-topology/
 
@@ -35,7 +36,7 @@ For more details and troubleshooting see: <br/> [https://github.com/enow/kafka-d
 and </br> [https://github.com/enow/storm-docker](https://github.com/enow/storm-docker)
 
 ## Apache Kafka, Zookeeper and Storm Installation
-Below two Repositories and Tutorials help you install powerful open source distributed realtime computation system.
+Below two Repositories help you learn and install powerful open source distributed realtime computation system.
 
 - [https://github.com/Writtic/docker-storm](https://github.com/Writtic/docker-storm)
 - [https://github.com/Writtic/docker-kafka](https://github.com/Writtic/docker-kafka)
