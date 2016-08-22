@@ -13,10 +13,10 @@ If you are using a Mac follow the instructions [here](https://docs.docker.com/in
 - Install [docker-compose](http://docs.docker.com/compose/install/)
 - Install [docker-machine](https://docs.docker.com/machine/)
 - Start docker-machine and follow the commands below on the docker-machine.
-- Build for running a Storm cluster
+- Build maven for running a Storm cluster
     - ```mvn clean package```
 - Move the files in ```submitter``` folder (```Dockerfile``` and ```entrypoint.sh```) to ```target``` folder
-- Build the jar file for submitting topology
+- Build the jar file on docker-machine for submitting topology
     - ```docker-compose -p storm build```
 - Start the test environment
     - ```docker-compose -p storm up```
