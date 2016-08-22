@@ -4,7 +4,7 @@ Storm Tutorial with Docker  ![travis-CI](https://travis-ci.org/Writtic/stormTuto
 Hello! Beginners of Apache Storm and Docker! <br/>
 This Repo is for you! Follow the README.md instructions and learn Apache Storm easily!
 
-This repository is based on https://azure.microsoft.com/ko-kr/documentation/articles/hdinsight-storm-develop-java-topology/
+The included maven project is based on [WordCount Example](https://azure.microsoft.com/documentation/articles/hdinsight-storm-develop-java-topology/) from Microsoft Azure
 
 Environment setup
 -----------------
@@ -16,11 +16,14 @@ If you are using a Mac follow the instructions [here](https://docs.docker.com/in
 - Build for running a Storm cluster
     - ```mvn clean package```
 - Move the files in ```submitter``` folder (```Dockerfile``` and ```entrypoint.sh```) to ```target``` folder
+- Build the jar file for submitting topology
+    - ```docker-compose -p storm build```
 - Start the test environment
     - ```docker-compose -p storm up```
 
 Storm UI
 --------
+Few minutes later... <br/>
 The Storm UI will be available under: ```http://<dockerIp>:8080/```<br/>
 The Logviewer will be available under: ```http://<dockerIp>:8000/``` <br/>
 e.g. ```http://<dockerIp>:8000/log?file=supervisor.log```
