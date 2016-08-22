@@ -3,11 +3,15 @@ Storm Tutorial with Docker  ![travis-CI](https://travis-ci.org/Writtic/stormTuto
 
 Hello! Beginners of Apache Storm and Docker! This Repo is for you! Follow the README.md instructions and learn Apache Storm easily!
 
+This repository is based on https://azure.microsoft.com/ko-kr/documentation/articles/hdinsight-storm-develop-java-topology/
+
 Environment setup
 -----------------
 
 If you are using a Mac follow the instructions [here](https://docs.docker.com/installation/mac/) to setup a docker environment.
 - Install [docker-compose](http://docs.docker.com/compose/install/)
+- Install [docker-machine](https://docs.docker.com/machine/)
+- Start docker-machine and follow the commands below on the docker-machine.
 - Build for running a Storm cluster
     - ```mvn clean package```
 - Move the files in ```submitter``` folder (```Dockerfile``` and ```entrypoint.sh```) to ```target``` folder
