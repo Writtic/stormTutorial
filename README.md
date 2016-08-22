@@ -1,4 +1,4 @@
-Storm Tutorial with Docker  ![travis-CI](https://travis-ci.org/Writtic/stormTutorial.svg?branch=master)
+Storm Tutorial with Docker  ![travis-CI](https://travis-ci.org/Writtic/stormTutorial.svg?branch=master) ![Maven Version](https://maven-badges.herokuapp.com/maven-central/org.apache.storm/storm-core/badge.svg)
 ==========================
 
 Hello, Users of Apache Storm and Docker! <br/>
