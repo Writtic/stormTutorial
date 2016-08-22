@@ -1,8 +1,8 @@
 Storm Tutorial with Docker  ![travis-CI](https://travis-ci.org/Writtic/stormTutorial.svg?branch=master)
 ==========================
 
-Hello! Beginners of Apache Storm and Docker! <br/>
-This Repo is for you! Follow the README.md instructions and learn Apache Storm easily!
+Hello, Users of Apache Storm and Docker! <br/>
+This Repo is for everyone! Follow the README.md instructions and learn Apache Storm easily!
 
 The included maven project is based on [WordCount Example](https://azure.microsoft.com/documentation/articles/hdinsight-storm-develop-java-topology/) from Microsoft Azure
 
