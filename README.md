@@ -33,8 +33,8 @@ when the storm ui is available create another window then Start the topology bui
 ```docker-compose -p storm -f submitter.yml build```<br/>
 ```docker-compose -p storm -f submitter.yml up```
 
-For more details and troubleshooting see: <br/> [Docker-Kafka example](https://github.com/Writtic/docker-kafka) </br>
-and </br> [Docker-Storm example](https://github.com/Writtic/docker-storm)
+For more details and troubleshooting see: <br/> [Docker-Kafka](https://github.com/Writtic/docker-kafka) </br>
+and </br> [Docker-Storm](https://github.com/Writtic/docker-storm)
 
 ## Apache Kafka, Zookeeper and Storm Installation
 Below two Repositories help you learn and install powerful open source distributed realtime computation system.
